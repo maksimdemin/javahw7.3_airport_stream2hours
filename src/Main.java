@@ -31,7 +31,7 @@ public class Main {
     }
 
 
-    private static LocalDateTime convertDToLdt(Date date) { // конвертация Date to LocalDateTime (миллиссекунды)
+    private static LocalDateTime convertDToLdt(Date date) { // конвертация Date to LocalDateTime
         return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();
 //        return Instant.ofEpochMilli(date.getTime()).atZone(ZoneId.systemDefault()).toLocalDateTime();
     }
